@@ -1,2 +1,2 @@
-# Components
-Common component encapsulation for Vue and React!
+# Components-React
+Common component encapsulation for React!
