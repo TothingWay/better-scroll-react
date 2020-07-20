@@ -1,0 +1,58 @@
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pulldown-wrapper {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  transition: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pullUp-wrapper {
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.loading {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #999;
+  animation: loading-rotating ease 1.5s infinite;
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+  line-height: 28px;
+  margin: 5px 0;
+  border-radius: 50%;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
+    width: 6px;
+    height: 6px;
+    background-color: #999;
+    border-radius: 50%;
+  }
+}
+
+@keyframes loading-rotating {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

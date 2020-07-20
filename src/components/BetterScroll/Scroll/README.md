@@ -1,0 +1,1 @@
+yarn add @better-scroll/core@next @better-scroll/pull-down@next @better-scroll/pull-up@next
