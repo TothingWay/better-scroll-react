@@ -1,4 +1,4 @@
-'use strict';
+
 
 const fs = require('fs');
 const path = require('path');
@@ -297,6 +297,7 @@ module.exports = function(webpackEnv) {
           'react-dom$': 'react-dom/profiling',
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
+        '@': path.join('src'),
         ...(modules.webpackAliases || {}),
       },
       plugins: [
@@ -357,6 +358,14 @@ module.exports = function(webpackEnv) {
               options: {
                 limit: imageInlineSizeLimit,
                 name: 'static/media/[name].[hash:8].[ext]',
+              },
+            },
+            {
+              test: /\.svg$/,
+              loader: 'svg-sprite-loader',
+              include: path.resolve(__dirname, '../src/icons/svg'),
+              options: {
+                symbolId: 'icon-[name]',
               },
             },
             // Process application JS with Babel.
