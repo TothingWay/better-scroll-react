@@ -18,7 +18,7 @@ export default memo(function Header(props: RouteConfigComponentProps) {
           {
             route!.routes!.find((item) => {
               return item.path === current
-            })!.name || 'Component-React'
+            })!.name
           }
         </span>
       </div>

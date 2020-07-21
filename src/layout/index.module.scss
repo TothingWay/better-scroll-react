@@ -12,10 +12,17 @@
   height: calc(100vh - 54px);
   box-sizing: border-box;
 }
+ul {
+  margin: 0;
+}
 
 h4 {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+li {
+  line-height: 2;
 }
 
 .header-name {

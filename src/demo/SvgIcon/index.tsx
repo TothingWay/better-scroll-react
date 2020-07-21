@@ -3,7 +3,7 @@ import SvgIcon from '@/components/SvgIcon'
 import svgIconsList from './svg-icons'
 import style from './index.module.scss'
 
-function Icon() {
+function SvgIconDemo() {
   const [svgIcons] = useState(svgIconsList)
   return (
     <div className={style['grid']}>
@@ -14,4 +14,4 @@ function Icon() {
   )
 }
 
-export default memo(Icon)
+export default memo(SvgIconDemo)

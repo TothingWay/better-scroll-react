@@ -9,6 +9,9 @@ export default memo(function AppMain() {
         <li>
           <NavLink to="/betterScroll/scroll">Scroll</NavLink>
         </li>
+        <li>
+          <NavLink to="/betterScroll/slide">Slide</NavLink>
+        </li>
       </ul>
       <h4>SvgIcon</h4>
       <ul>
