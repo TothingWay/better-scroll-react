@@ -10,6 +10,12 @@ export default memo(function AppMain() {
           <NavLink to="/betterScroll/scroll">Scroll</NavLink>
         </li>
       </ul>
+      <h4>SvgIcon</h4>
+      <ul>
+        <li>
+          <NavLink to="/svgIcon">SvgIcon</NavLink>
+        </li>
+      </ul>
     </>
   )
 })

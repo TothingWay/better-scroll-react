@@ -1,7 +1,7 @@
 import Layout from '@/layout/Header'
 import AppMain from '@/layout/AppMain'
 import Scroll from '@/demo/BetterScroll/Scroll'
-
+import SvgIcon from '@/demo/SvgIcon'
 
 export default [
   {
@@ -11,21 +11,18 @@ export default [
       {
         path: '/',
         exact: true,
-        component: AppMain
+        component: AppMain,
       },
       {
         path: '/betterScroll/scroll',
         component: Scroll,
-        name: 'BetterScroll-Scroll'
-      },
-      /* {
-        path: '/singers',
-        component: Singers,
+        name: 'BetterScroll-Scroll',
       },
       {
-        path: '/rank',
-        component: Rank,
-      }, */
+        path: '/svgIcon',
+        component: SvgIcon,
+        name: 'SvgIcon'
+      },
     ],
   },
 ]
