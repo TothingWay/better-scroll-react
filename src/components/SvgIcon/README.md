@@ -1,3 +1,8 @@
+## Intro
+
+将.svg文件放入/src/icons/svg目录下，即可通过 `<SvgIcon iconClass={//svg文件名} />`使用svg图标，svg的大小和颜色可通过css配置
+
+
 ## Dependencies
 
 ```

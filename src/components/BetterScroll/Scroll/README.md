@@ -1,3 +1,7 @@
+## Intro
+
+滚动容器组件（移动端）
+
 ## Dependencies
 
 ```
@@ -10,4 +14,4 @@ yarn add @better-scroll/core@next @better-scroll/pull-down@next @better-scroll/p
 
 ## Example
 
-Detail see `/src/demo/BetterScroll/Scroll`
+Detail see `/src/demo/BetterScroll/Scroll`，
