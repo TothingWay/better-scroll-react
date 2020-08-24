@@ -4,6 +4,7 @@ import React, {
   ButtonHTMLAttributes,
   AnchorHTMLAttributes,
   MouseEventHandler,
+  memo,
 } from 'react'
 import classnames from 'classnames'
 
@@ -77,4 +78,4 @@ Button.defaultProps = {
   htmlType: 'button' as ButtonHTMLType,
 }
 
-export default Button
+export default memo(Button)
