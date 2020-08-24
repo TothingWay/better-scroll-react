@@ -25,7 +25,7 @@ export interface MenuProps {
   onSelect?: SelectCallback
   /* 设置子菜单的默认打开 只在纵向模式下生效 */
   defaultOpenSubMenus?: string[]
-  children: ReactNode
+  children?: ReactNode
 }
 
 interface MenuContextType {
