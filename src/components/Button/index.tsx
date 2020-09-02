@@ -4,12 +4,11 @@ import React, {
   ButtonHTMLAttributes,
   AnchorHTMLAttributes,
   MouseEventHandler,
-  memo,
 } from 'react'
 import classnames from 'classnames'
 
 export type ButtonSize = 'lg' | 'sm'
-export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
+export type ButtonType = 'default' | 'primary' | 'danger' | 'link'
 export type ButtonHTMLType = 'submit' | 'button' | 'reset'
 
 interface BaseButtonProps {
@@ -75,7 +74,7 @@ const Button: FC<ButtonProps> = ({
 Button.defaultProps = {
   disabled: false,
   type: 'default',
-  htmlType: 'button' as ButtonHTMLType,
+  htmlType: 'button',
 }
 
-export default memo(Button)
+export default Button
