@@ -22,6 +22,9 @@
       pointer-events: none;
     }
   }
+  &+.btn {
+    margin-left: 10px;
+  }
 }
 
 .btn-lg {
