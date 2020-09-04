@@ -1,7 +1,26 @@
 {
   "name": "components-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "React components library",
+  "author": "TothingWay",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "Component",
+    "UI",
+    "React"
+  ],
+  "homepage": "https://github.com/TothingWay/Components-React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TothingWay/Components-React"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -68,10 +87,13 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && npm run build-ts && npm run build-css",
     "test": "node scripts/test.js --coverage --watchAll=false",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "node-sass ./src/styles/index.scss ./dist/index.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -156,6 +178,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
+    "rimraf": "^3.0.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^0.23.1"
   }

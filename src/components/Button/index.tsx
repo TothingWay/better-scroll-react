@@ -4,6 +4,7 @@ import React, {
   ButtonHTMLAttributes,
   AnchorHTMLAttributes,
   MouseEventHandler,
+  memo,
 } from 'react'
 import classnames from 'classnames'
 
@@ -36,7 +37,7 @@ export type NativeButtonProps = {
   Omit<ButtonHTMLAttributes<any>, 'type' | 'onClick'>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   className,
   disabled,
   size,
@@ -77,4 +78,4 @@ Button.defaultProps = {
   htmlType: 'button',
 }
 
-export default Button
+export default memo(Button)

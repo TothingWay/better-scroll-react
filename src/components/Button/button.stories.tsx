@@ -1,7 +1,7 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
-import Button, { ButtonProps } from './index'
+import { Button, ButtonProps } from './index'
 
 export default {
   title: 'Button',
@@ -29,8 +29,6 @@ const TypeTemplate: Story<ButtonProps> = (args) => (
   </>
 )
 
-export const Types = TypeTemplate.bind({})
-
 const SizesTemplate: Story<ButtonProps> = (args) => (
   <>
     <Button {...args} size="sm">
@@ -42,5 +40,5 @@ const SizesTemplate: Story<ButtonProps> = (args) => (
     </Button>
   </>
 )
-
+export const Types = TypeTemplate.bind({})
 export const Sizes = SizesTemplate.bind({})
