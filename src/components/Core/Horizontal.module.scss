@@ -1,0 +1,21 @@
+.horizontal-container {
+  .scroll-wrapper {
+    width: 90%;
+    margin: 80px auto;
+    white-space: nowrap;
+    border: 3px solid #42b983;
+    border-radius: 5px;
+    overflow: hidden;
+    .scroll-content {
+      display: inline-block;
+    }
+    .scroll-item {
+      height: 50px;
+      line-height: 50px;
+      font-size: 24px;
+      display: inline-block;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+}
