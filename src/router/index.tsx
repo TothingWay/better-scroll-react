@@ -1,8 +1,8 @@
 import App from '../App'
 import CoreEntry from '../pages/CoreEntry'
 import ObserveDOMEntry from '../pages/ObserveDOMEntry'
-// import ZoomEntry from '../pages/zoom-entry'
 import SlideEntry from '../pages/SlideEntry'
+import ZoomEntry from '../pages/ZoomEntry'
 // import PickerEntry from '../pages/picker-entry'
 // import PullupEntry from '../pages/pullup-entry'
 // import PullDownEntry from '../pages/pulldown-entry'
@@ -113,6 +113,11 @@ export default [
             key: 'VerticalSlide',
           },
         ],
+      },
+      {
+        path: '/zoom',
+        component: ZoomEntry,
+        key: 'ZoomEntry',
       },
     ],
   },
