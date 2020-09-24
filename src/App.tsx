@@ -13,6 +13,10 @@ function App(props: RouteConfigComponentProps) {
       path: '/core',
     },
     {
+      name: 'observe-dom',
+      path: '/observe-dom',
+    },
+    {
       name: 'slide',
       path: '/slide',
     },

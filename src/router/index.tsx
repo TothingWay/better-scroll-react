@@ -1,7 +1,7 @@
 import App from '../App'
 import CoreEntry from '../pages/CoreEntry'
 // import ZoomEntry from '../pages/zoom-entry'
-// import SlideEntry from '../pages/slide-entry'
+import SlideEntry from '../pages/SlideEntry'
 // import PickerEntry from '../pages/picker-entry'
 // import PullupEntry from '../pages/pullup-entry'
 // import PullDownEntry from '../pages/pulldown-entry'
@@ -21,9 +21,9 @@ import CoreEntry from '../pages/CoreEntry'
 // import MouseWheelPullDown from '../components/mouse-wheel/pulldown'
 // import MouseWheelPicker from '../components/mouse-wheel/picker'
 
-// import BannerSlide from '../components/slide/banner'
-// import PageSlide from '../components/slide/fullpage'
-// import VerticalSlide from '../components/slide/vertical'
+import BannerSlide from '../components/Slide/Banner'
+import PageSlide from '../components/Slide/Fullpage'
+import VerticalSlide from '../components/Slide/Vertical'
 
 import VerticalScroll from '../components/Core/Default'
 import HorizontalScroll from '../components/Core/Horizontal'
@@ -83,6 +83,28 @@ export default [
             path: '/core/freescroll',
             component: Freescroll,
             key: 'Freescroll',
+          },
+        ],
+      },
+      {
+        path: '/slide',
+        component: SlideEntry,
+        key: 'SlideEntry',
+        routes: [
+          {
+            path: '/slide/banner',
+            component: BannerSlide,
+            key: 'BannerSlide',
+          },
+          {
+            path: '/slide/fullpage',
+            component: PageSlide,
+            key: 'PageSlide',
+          },
+          {
+            path: '/slide/vertical',
+            component: VerticalSlide,
+            key: 'VerticalSlide',
           },
         ],
       },

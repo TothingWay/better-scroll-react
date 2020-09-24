@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import BScroll from '@better-scroll/core'
-import style from './default.module.scss'
+import style from './Default.module.scss'
 
 const emojis = [
   '😀 😁 😂 🤣 😃',
