@@ -1,5 +1,6 @@
 import App from '../App'
 import CoreEntry from '../pages/CoreEntry'
+import ObserveDOMEntry from '../pages/ObserveDOMEntry'
 // import ZoomEntry from '../pages/zoom-entry'
 import SlideEntry from '../pages/SlideEntry'
 // import PickerEntry from '../pages/picker-entry'
@@ -85,6 +86,11 @@ export default [
             key: 'Freescroll',
           },
         ],
+      },
+      {
+        path: '/observe-dom',
+        component: ObserveDOMEntry,
+        key: 'ObserveDOMEntry',
       },
       {
         path: '/slide',
