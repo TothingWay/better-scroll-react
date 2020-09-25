@@ -64,3 +64,19 @@
   background: #fff;
   transform: translate3d(0, 0, 0);
 }
+
+.picker-fade-enter, .picker-fade-appear {
+  opacity: 0;
+}
+.picker-fade-enter-active, .picker-fade-appear-active {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+.picker-move-enter, .picker-move-appear {
+  transform: translate3d(0, 273px, 0);
+}
+.picker-move-enter-active, .picker-move-appear-active {
+  transform: translate3d(0, 0, 0);
+  transition: all .3s ease-in-out;
+}

@@ -3,7 +3,7 @@ import CoreEntry from '../pages/CoreEntry'
 import ObserveDOMEntry from '../pages/ObserveDOMEntry'
 import SlideEntry from '../pages/SlideEntry'
 import ZoomEntry from '../pages/ZoomEntry'
-// import PickerEntry from '../pages/picker-entry'
+import PickerEntry from '../pages/PickerEntry'
 // import PullupEntry from '../pages/pullup-entry'
 // import PullDownEntry from '../pages/pulldown-entry'
 // import ScrollBarEntry from '../pages/scrollbar-entry'
@@ -32,9 +32,9 @@ import DynamicContentScroll from '../components/Core/DynamicContentScroll'
 import SpecifiedContentScroll from '../components/Core/SpecifiedContentScroll'
 import Freescroll from '../components/Core/Freescroll'
 
-// import OneColumnPicker from '../components/picker/one-column'
-// import DoubleColumnPicker from '../components/picker/double-column'
-// import LinkageColumnPicker from '../components/picker/linkage-column'
+import OneColumnPicker from '../components/Picker/OneColumn'
+import DoubleColumnPicker from '../components/Picker/DoubleColumn'
+import LinkageColumnPicker from '../components/Picker/LinkageColumn'
 
 // import FormTextarea from '../components/form/textarea'
 
@@ -118,6 +118,28 @@ export default [
         path: '/zoom',
         component: ZoomEntry,
         key: 'ZoomEntry',
+      },
+      {
+        path: '/picker',
+        component: PickerEntry,
+        key: 'PickerEntry',
+        routes: [
+          {
+            path: '/picker/one-column',
+            component: OneColumnPicker,
+            key: 'OneColumnPicker',
+          },
+          {
+            path: '/picker/double-column',
+            component: DoubleColumnPicker,
+            key: 'DoubleColumnPicker',
+          },
+          {
+            path: '/picker/linkage-column',
+            component: LinkageColumnPicker,
+            key: 'LinkageColumnPicker',
+          },
+        ],
       },
     ],
   },
