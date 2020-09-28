@@ -154,7 +154,7 @@ function OneColumnPicker() {
             <div
               style={state === 1 ? { display: 'block' } : { display: 'none' }}
               className={style['picker-panel']}
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className={`${style['picker-choose']} border-bottom-1px`}>
                 <span className={style['cancel']} onClick={hide}>
