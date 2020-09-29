@@ -2,7 +2,7 @@ import React, { useState, useCallback, useRef } from 'react'
 import BScroll from '@better-scroll/core'
 import Wheel from '@better-scroll/wheel'
 import { CSSTransition } from 'react-transition-group'
-import style from './DoubleColumn.module.scss'
+import style from './index.module.scss'
 BScroll.use(Wheel)
 
 const STATE_HIDE = 0
@@ -158,7 +158,6 @@ function DoubleColumnPicker() {
             return [bs]
           }
         })
-        console.log(wheels, wheels)
       } else {
         wheels && wheels[i].refresh()
       }
@@ -197,12 +196,7 @@ function DoubleColumnPicker() {
           <span className={style['open']}>{selectedText}</span>
         </li>
       </ul>
-      <CSSTransition
-        classNames="picker-fade"
-        timeout={300}
-        appear={true}
-        in={state === 1}
-      >
+      <CSSTransition classNames="picker-fade" timeout={300} in={state === 1}>
         <div
           className={style['picker']}
           style={state === 1 ? { display: 'block' } : { display: 'none' }}
@@ -212,7 +206,6 @@ function DoubleColumnPicker() {
           <CSSTransition
             classNames="picker-move"
             timeout={300}
-            appear={true}
             in={state === 1}
           >
             <div
