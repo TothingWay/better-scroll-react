@@ -9,7 +9,7 @@ interface ZoomProps {
   scale: number
 }
 
-function ObserveDOMDefault() {
+function ZoomDefault() {
   const scroll = useRef<HTMLDivElement>(null)
   const [zoom, setZoom] = useState<BScroll | null>()
   const [linkworkTransform, setLinkworkTransform] = useState('scale(1)')
@@ -89,4 +89,4 @@ function ObserveDOMDefault() {
   )
 }
 
-export default ObserveDOMDefault
+export default ZoomDefault

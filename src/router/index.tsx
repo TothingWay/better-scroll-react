@@ -4,7 +4,7 @@ import ObserveDOMEntry from '../pages/ObserveDOMEntry'
 import SlideEntry from '../pages/SlideEntry'
 import ZoomEntry from '../pages/ZoomEntry'
 import PickerEntry from '../pages/PickerEntry'
-// import PullupEntry from '../pages/pullup-entry'
+import PullupEntry from '../pages/PullupEntry'
 // import PullDownEntry from '../pages/pulldown-entry'
 // import ScrollBarEntry from '../pages/scrollbar-entry'
 // import InfinityScrollEntry from '../pages/infinity-entry'
@@ -140,6 +140,11 @@ export default [
             key: 'LinkageColumnPicker',
           },
         ],
+      },
+      {
+        path: '/pullup',
+        component: PullupEntry,
+        key: 'PullupEntry',
       },
     ],
   },

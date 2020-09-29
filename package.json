@@ -5,6 +5,7 @@
   "dependencies": {
     "@better-scroll/core": "^2.0.4",
     "@better-scroll/observe-dom": "^2.0.4",
+    "@better-scroll/pull-up": "^2.0.4",
     "@better-scroll/slide": "^2.0.4",
     "@better-scroll/wheel": "^2.0.4",
     "@better-scroll/zoom": "^2.0.4",
